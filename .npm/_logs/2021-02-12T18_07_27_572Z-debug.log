@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '@opentelemetry/plugin-mongod'
+1 verbose cli ]
+2 info using npm@6.13.4
+3 info using node@v12.14.1
+4 verbose config Skipping project config: /home/ec2-user/.npmrc. (matches userconfig)
+5 verbose npm-session d09f7f2a4cfbd4a8
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 http fetch GET 404 https://registry.npmjs.org/@opentelemetry%2fplugin-mongod 127ms
+9 http fetch GET 404 https://registry.npmjs.org/@opentelemetry%2fplugin-mongod 91ms
+10 silly fetchPackageMetaData error for @opentelemetry/plugin-mongod@latest 404 Not Found - GET https://registry.npmjs.org/@opentelemetry%2fplugin-mongod - Not found
+11 timing stage:rollbackFailedOptional Completed in 0ms
+12 timing stage:runTopLevelLifecycles Completed in 548ms
+13 verbose stack Error: 404 Not Found - GET https://registry.npmjs.org/@opentelemetry%2fplugin-mongod - Not found
+13 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-fetch/check-response.js:104:15
+13 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:94:5)
+14 verbose statusCode 404
+15 verbose pkgid @opentelemetry/plugin-mongod@latest
+16 verbose cwd /home/ec2-user
+17 verbose Linux 4.14.214-160.339.amzn2.x86_64
+18 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "@opentelemetry/plugin-mongod"
+19 verbose node v12.14.1
+20 verbose npm  v6.13.4
+21 error code E404
+22 error 404 Not Found - GET https://registry.npmjs.org/@opentelemetry%2fplugin-mongod - Not found
+23 error 404
+24 error 404 '@opentelemetry/plugin-mongod@latest' is not in the npm registry.
+25 error 404 You should bug the author to publish it (or use the name yourself!)
+26 error 404 Note that you can also install from a
+27 error 404 tarball, folder, http url, or git url.
+28 verbose exit [ 1, true ]

@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '@opentelemetry'
+1 verbose cli ]
+2 info using npm@6.13.4
+3 info using node@v12.14.1
+4 verbose config Skipping project config: /home/ec2-user/.npmrc. (matches userconfig)
+5 verbose npm-session e847dbdbb45f0729
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 timing stage:rollbackFailedOptional Completed in 1ms
+9 timing stage:runTopLevelLifecycles Completed in 364ms
+10 verbose stack Error: Invalid tag name "@opentelemetry": Tags may not have any characters that encodeURIComponent encodes.
+10 verbose stack     at invalidTagName (/usr/local/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:91:15)
+10 verbose stack     at fromRegistry (/usr/local/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:296:13)
+10 verbose stack     at resolve (/usr/local/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:81:12)
+10 verbose stack     at npa (/usr/local/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:52:10)
+10 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/deps.js:227:14
+10 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+10 verbose stack     at Array.forEach (<anonymous>)
+10 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+10 verbose stack     at Array.forEach (<anonymous>)
+10 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+10 verbose stack     at exports.getAllMetadata (/usr/local/lib/node_modules/npm/lib/install/deps.js:224:3)
+10 verbose stack     at Installer.loadArgMetadata (/usr/local/lib/node_modules/npm/lib/install.js:366:3)
+10 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:701:16
+10 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/read-shrinkwrap.js:33:16
+10 verbose stack     at tryCatcher (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/util.js:16:23)
+10 verbose stack     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:517:31)
+11 verbose cwd /home/ec2-user
+12 verbose Linux 4.14.214-160.339.amzn2.x86_64
+13 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "@opentelemetry"
+14 verbose node v12.14.1
+15 verbose npm  v6.13.4
+16 error code EINVALIDTAGNAME
+17 error Invalid tag name "@opentelemetry": Tags may not have any characters that encodeURIComponent encodes.
+18 verbose exit [ 1, true ]
